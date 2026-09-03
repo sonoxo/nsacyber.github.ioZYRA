@@ -1,0 +1,8 @@
+{
+  "version": "2.0",
+  "agency": "NSA",
+  "releases": [
+    {"name":"Duplicate","repositoryURL":"https://github.com/nsacyber/one","status":"Production","vcs":"git"},
+    {"name":"Duplicate","repositoryURL":"https://github.com/nsacyber/two","status":"Production","vcs":"git"}
+  ]
+}
