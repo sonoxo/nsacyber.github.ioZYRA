@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "classes": [
+    {"id":"catalog.schema","severity":"error","description":"Catalog JSON does not satisfy required structure."},
+    {"id":"catalog.duplicate-name","severity":"warning","description":"Release names are duplicated."},
+    {"id":"catalog.duplicate-repository","severity":"warning","description":"Repository URLs are duplicated."},
+    {"id":"catalog.invalid-url","severity":"error","description":"A URL is not absolute HTTP/HTTPS."},
+    {"id":"markdown.local-link","severity":"error","description":"A local Markdown target does not exist."},
+    {"id":"publication.missing-date","severity":"warning","description":"Publication metadata is missing a date."},
+    {"id":"publication.missing-link","severity":"error","description":"Publication metadata is missing a link."},
+    {"id":"accessibility.image-alt","severity":"warning","description":"Markdown image syntax has empty alternative text."}
+  ]
+}
