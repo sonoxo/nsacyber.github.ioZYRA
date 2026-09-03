@@ -1,0 +1,39 @@
+name: contribution-audit
+
+on:
+  pull_request:
+    paths:
+      - 'code.json'
+      - 'publications.md'
+      - '**/*.md'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'config/**'
+  push:
+    branches:
+      - master
+    paths:
+      - 'code.json'
+      - 'publications.md'
+      - '**/*.md'
+      - 'scripts/**'
+      - 'schemas/**'
+      - 'config/**'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run contribution audit
+        shell: pwsh
+        run: ./scripts/Invoke-ContributionAudit.ps1
+      - name: Report catalog statistics
+        shell: pwsh
+        run: ./scripts/Get-CatalogStats.ps1
+      - name: Report metadata coverage
+        shell: pwsh
+        run: ./scripts/Measure-CatalogCoverage.ps1
