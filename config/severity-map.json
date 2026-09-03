@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "levels": {
+    "error": {"blocks_ci": true, "priority": 100},
+    "warning": {"blocks_ci": false, "priority": 50},
+    "info": {"blocks_ci": false, "priority": 10}
+  },
+  "rules": {
+    "catalog.schema": "error",
+    "catalog.invalid-url": "error",
+    "markdown.local-link": "error",
+    "publication.missing-link": "error",
+    "catalog.duplicate-name": "warning",
+    "catalog.duplicate-repository": "warning",
+    "publication.missing-date": "warning",
+    "accessibility.image-alt": "warning"
+  }
+}
