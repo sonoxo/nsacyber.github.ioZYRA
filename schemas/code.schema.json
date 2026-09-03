@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://nsacyber.github.io/schema/code.schema.json",
+  "title": "NSA Cyber code.json catalog",
+  "type": "object",
+  "required": ["version", "agency", "releases"],
+  "properties": {
+    "version": {"type": "string"},
+    "agency": {"type": "string", "minLength": 1},
+    "releases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "repositoryURL", "status", "vcs"],
+        "properties": {
+          "name": {"type": "string", "minLength": 1},
+          "repositoryURL": {"type": "string", "pattern": "^https?://"},
+          "status": {"type": "string", "minLength": 1},
+          "vcs": {"type": "string", "minLength": 1},
+          "homepageURL": {"type": "string"},
+          "downloadURL": {"type": "string"}
+        }
+      }
+    }
+  }
+}
