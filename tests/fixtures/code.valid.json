@@ -1,0 +1,12 @@
+{
+  "version": "2.0",
+  "agency": "NSA",
+  "releases": [
+    {
+      "name": "Example-Tool",
+      "repositoryURL": "https://github.com/nsacyber/example-tool",
+      "status": "Production",
+      "vcs": "git"
+    }
+  ]
+}
