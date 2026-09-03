@@ -1,0 +1,3 @@
+# Broken Fixture
+
+This [missing target](does-not-exist.md) is intentionally invalid and stored as .txt so repository-wide Markdown checks do not consume it directly.
